@@ -1,0 +1,112 @@
+@charset "utf-8";
+body {
+    background: #fff;
+    color: #39313c;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+/* Header */
+h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+p span {
+    font-size: 1.875rem;
+}
+
+/* 공통클래스 */
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+/* Header 박스 */
+header .wrapper {
+    background: url(../images/iu/iu01.jpg) 4.16667% center no-repeat;
+    background-size: 33.33333% auto;
+    padding: 10% 4.16667% 10% 41.6667%;
+}
+/* 각 Section */
+#store_1 .wrapper {
+    background: url(../images/iu/iu02.jpg) 4.16667% center no-repeat;
+    background-size: 33.33333% auto;
+    padding: 10% 4.16667% 10% 41.6667%;
+}
+#store_2 .wrapper {
+    background: url(../images/iu/iu03.jpg) 4.16667% center no-repeat;
+    background-size: 33.33333% auto;
+    padding: 10% 4.16667% 10% 41.6667%;
+}
+#store_3 .wrapper {
+    background: url(../images/iu/iu04.jpg) 4.16667% center no-repeat;
+    background-size: 33.33333% auto;
+    padding: 10% 4.16667% 10% 41.6667%;
+}
+#store_4 .wrapper {
+  background: url(../images/iu/iu05.jpg) 4.16667% center no-repeat;
+  background-size: 33.33333% auto;
+  padding: 10% 4.16667% 10% 41.6667%;
+}
+#store_5 .wrapper {
+  background: url(../images/iu/iu06.jpg) 4.16667% center no-repeat;
+  background-size: 33.33333% auto;
+  padding: 10% 4.16667% 10% 41.6667%;
+}
+
+/* Footer */
+footer {
+    background-color: #1b7ef0d7;
+    text-align: center;
+    /* padding: 4.16667% 3.33333%; */
+}
+
+/* 패럴렉스 CSS */
+/* 공통 패럴랙스 css코딩 */
+header::after,section::after {
+    display: block;
+    width: 100%;
+    height: 400px;
+    content: "";
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-size: contain; */
+    /* background: url(../images/bg01.jpg); */
+}
+header::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+#store_1::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+#store_2::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+#store_3::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+#store_4::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+#store_5::after{
+    background-image: url(../images/iubackground/iubg00.jpg);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scrollbar-width: none; /* 스크롤바 숨기기 (Firefox) */
+}
+
+.fullscreen-image {
+  width: 100vw; /* 뷰포트 너비를 100%로 설정 */
+  height: 100vh; /* 2배 높이로 설정 (스크롤 가능하도록 설정) */
+  background-image: url('your-image-url.jpg'); /* 여기에 이미지를 설정 */
+  background-size: cover; /* 이미지를 화면에 맞게 비율 유지하며 채우기 */
+  background-position: center; /* 이미지를 가운데 정렬 */
+  background-repeat: no-repeat; /* 이미지 반복 없애기 */
+
+}
